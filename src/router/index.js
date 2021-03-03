@@ -8,6 +8,7 @@ const Home = () => import('views/tabbar/home/Home')
 const Category = () => import('views/tabbar/category/Category')
 const Cart = () => import('views/tabbar/shopcart/Shopcart')
 const Profile = () => import('views/tabbar/profile/Profile')
+const Detail = () => import('views/tabbar/detail/Detail')
 
 
 const routes = [
@@ -30,6 +31,10 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
   }
 ]
 
